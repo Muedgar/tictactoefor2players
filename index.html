@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+<body>
+    <div class="game-controller">
+    <div id="board_id" class="board">
+        <div class="board-row">
+            <div onclick="app(0)" id="0" class="board-cell special-cell-style-one"><h1 id="header0"></h1></div>
+            <div onclick="app(1)" id="1" class="board-cell special-border-one"><h1 id="header1"></h1></div>
+            <div onclick="app(2)" id="2" class="board-cell special-cell-style-two"><h1 id="header2"></h1></div>
+        </div>
+        <div class="board-row">
+            <div onclick="app(3)" id="3" class="board-cell special-border-two-one"><h1 id="header3"></h1></div>
+            <div onclick="app(4)" id="4" class="board-cell special-border-two-two"><h1 id="header4"></h1></div>
+            <div onclick="app(5)" id="5" class="board-cell special-border-two-three"><h1 id="header5"></h1></div>
+        </div>
+        <div class="board-row">
+            <div onclick="app(6)" id="6" class="board-cell special-cell-style-three special-cell-style-left-one"><h1 id="header6"></h1></div>
+            <div onclick="app(7)" id="7" class="board-cell special-border-three"><h1 id="header7"></h1></div>
+            <div onclick="app(8)" id="8" class="board-cell special-cell-style-four special-cell-style-left-one"><h1 id="header8"></h1></div>
+        </div>
+    </div>
+    <div class="status-area">
+        <div class="choose size-status current-player">
+            <div onclick="app('X')" class="choose start-x"><h2>X</h2></div>
+            <div onclick="app('O')" class="choose start-x"><h2>O</h2></div>
+        </div>
+        <div class="size-status empty-spots">
+            <div class="play"><h2 id="current-player-header"></h2></div>
+        </div>
+        <div class="size-status winner">
+            <div class="start-x"><h2 id="winner"></h2></div>
+            <div class="start-x"><h2 id="loser"></h2></div>
+        </div>
+    </div>
+    </div>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
